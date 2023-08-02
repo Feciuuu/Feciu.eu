@@ -1,0 +1,141 @@
+<!DOCTYPE html><html><head>
+    <title>Feciu.eu</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/fontawesome.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min_1.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <meta name="description" content="Feciu.eu - Strona Uzytkownika - Feciu.">
+    <script src="https://kit.fontawesome.com/badf63d9c9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div id="main" class="center">
+        <img src="images/firstimg.png" class="firstimg">
+        <div id="overlay" onclick="play()"><span class="header center begin" id="status_text">click anywhere</span>
+            <audio loop id="music">
+                <source src="media/music.mp3">
+            </audio>
+            <script>
+                var audio = document.getElementById("music");
+                audio.volume = 0.90;
+              </script>
+        </div>
+        <div class="center">
+            <div class="list">
+                <div class="members">
+                    <div class="card">
+                        <img class="pfp" src="images/feciu.gif" alt="a">
+                        <div class="username">Feciu.</div>
+                        <div class="sub"><span class="auto-type" < span></span></div>
+                        <div class="socials">
+                            <a href="https://discord.com/users/1092121977625522238" target="_blank"><i class="fab fa-discord"></i></a>
+                            <a href="https://www.youtube.com/@feciu/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://kick.com/feciu" target="_blank"><i class="fa-brands fa-kickstarter"></i></a>
+                            <a href="https://steamcommunity.com/profiles/76561198868395042/" target="_blank"><i class="fab fa-steam"></i></a>
+                            <a href="https://twitch.tv/feciu_1" target="_blank"><i class="fab fa-twitch"></i></a>
+                            <a href="https://twitter.com/feciu1" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/feciuu_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@feciu__" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://open.spotify.com/user/ojwppo3g1m1z81qucyyi173zo" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                            <a href="https://www.snapchat.com/add/feciuux?share_id=bByMSe5iTWuJOpnCUOyWgg&locale=pl_PL" target="_blank"><i class="fa-brands fa-square-snapchat"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <script>
+                    $('#background').fadeOut(0)
+                    $('.card').fadeOut(0)
+
+                const play = function () {
+                    $('#overlay').fadeOut(100)
+
+                    music.play()
+                    setTimeout(goAnim, 100);
+                }
+
+                const goAnim = function () {
+                    $('.firstimg').fadeOut(1)
+                    $('.card').fadeIn()
+                    $('#background').fadeIn()
+                }
+
+            </script>
+
+            <script>
+               
+               var typed = new Typed('.auto-type', {
+                strings: [".gg/vehicles^5000", "SOON NEW BEST PROJECT^5000 ", "press space to pause music^2500"],
+                typeSpeed: 120,
+                backSpeed: 50,
+                loop: true,
+                });
+
+            </script>
+
+            <script>
+               
+                var space = " ";
+                var speed = "300";
+                var pos = 0;
+                var msg = "Feciu Website"; 
+                function Scroll()
+             
+             </script>
+
+            <script>
+
+            var player = document.getElementById('music')
+
+            if (player) {
+            window.addEventListener('keydown', function (event) {
+                var key = event.which || event.keyCode
+                if (key === 32) {
+                event.preventDefault();
+                player.paused ? player.play() : player.pause()
+                } else if (key == 37) {
+                event.preventDefault();
+                player.currentTime = player.currentTime - 10;
+                } else if (key == 39) {
+                event.preventDefault();
+                player.currentTime = player.currentTime + 10;
+                }
+            });
+
+            if (window.location.search) {
+                var duration = window.location.search.substr(1);
+                player.currentTime = simpleDurationParsing(duration);
+                player.play();
+            }
+            }
+
+            function simpleDurationParsing(duration) {
+            duration = duration.toLowerCase();
+
+            var seconds = 0;
+            var index = 0;
+
+            if ((index = duration.indexOf('m')) > -1) {
+                seconds += parseInt(duration.substring(0, index)) * 60;
+                duration = duration.substr(index + 1);
+            }
+
+            if ((index = duration.indexOf('s')) > -1)
+                duration = duration.substring(0, index);
+
+            if (duration.length)
+                seconds += parseInt(duration);
+
+            return seconds;
+            }
+            </script>
+
+
+
+
+</div></div></body></html>
