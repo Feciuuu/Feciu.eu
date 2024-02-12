@@ -178,3 +178,16 @@ img {
     height: 1000px;
     border-radius: 0%;
 }
+
+.note {
+    position: fixed;
+    top: 570px;
+    right: 640px;
+    padding: 6px;
+    color: #fff;
+    opacity: 0.35;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    white-space: nowrap;
+}
